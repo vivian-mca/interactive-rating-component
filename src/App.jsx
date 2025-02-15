@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, ThankYouCard } from "./components";
 
 function App() {
@@ -13,8 +13,20 @@ function App() {
       alert("Please select a rating first!");
       return;
     }
+    window.history.pushState({}, "", "?submitted=true"); // Adds to browser history
     setIsSubmitted(true);
   };
+
+  // Listen for browser back button
+  useEffect(() => {
+    const handlePopState = () => {
+      setIsSubmitted(false); // Reset submission state
+      setSelectedRating(null); // Reset rating selection
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   return (
     <div>
