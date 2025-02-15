@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Card, SubmitButton, ThankYouCard } from "./components";
-import { RatingGroup } from "./container";
+import { Card, ThankYouCard } from "./components";
 
 function App() {
   const [selectedRating, setSelectedRating] = useState(null); // Stores chosen rating
@@ -15,16 +14,16 @@ function App() {
       return;
     }
     setIsSubmitted(true);
-  }
+  };
 
   return (
     <div>
       {!isSubmitted ? ( // If not submitted, show rating options
-        <>
-          <Card />
-          <RatingGroup ratings={ratings} setSelectedRating={setSelectedRating} />
-          <SubmitButton onSubmit={handleSubmit} />
-        </>
+        <Card
+          ratings={ratings}
+          setSelectedRating={setSelectedRating}
+          handleSubmit={handleSubmit}
+        />
       ) : (
         // If submitted, show Thank You display message
         <ThankYouCard value={selectedRating} totalRatings={ratings.length} /> // Shows chosen rating
