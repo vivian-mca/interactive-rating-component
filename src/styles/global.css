@@ -1,0 +1,68 @@
+:root {
+  /* ===== Neutral Colors ===== */
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-300: hsl(217, 12%, 63%);
+  --color-neutral-600: hsl(213, 19%, 18%);
+  --color-neutral-800: hsl(216, 12%, 8%);
+
+  /* ===== Primary Colors ===== */
+  --color-primary-400: hsl(25, 97%, 53%);
+
+  /* ===== Semantic Mappings ===== */
+  --color-background: var(--color-neutral-800);
+  --color-button-rating-active: var(--color-primary-400);
+  --color-button-rating-hover: var(--color-neutral-100);
+  --color-button-rating: var(--color-neutral-600);
+  --color-button-submit-hover: var(--color-neutral-100);
+  --color-button-submit: var(--color-primary-400);
+  --color-card-bg: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  --color-rating-result-bg: var(--color-neutral-600);
+  --color-text-accent: var(--color-primary-400);
+  --color-text-dark: var(--color-neutral-800);
+  --color-text-light: var(--color-neutral-100);
+  --color-text-primary: var(--color-neutral-300);
+
+  /* ===== Typography ===== */
+  --font-primary: "Overpass", sans-serif;
+  --font-line-height-desktop: calc(24 / 16);
+  --font-line-height-mobile: calc(22 / 16);
+  --font-size-xs: 0.875rem; /* 14px */
+  --font-size-sm: 0.938rem; /* 15px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.5rem; /* 24px */
+  --font-size-xl: 1.75rem; /* 28px */
+  --font-weight-primary: 400;
+  --font-weight-bold: 700;
+
+  /* ===== Spacing System ===== */
+  --space-xs: 0.625rem; /* 10px */
+  --space-sm: 0.938rem; /* 15px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.063rem; /* 17px */
+  --space-xl: 1.313rem; /* 21px */
+  --space-2xl: 1.5rem; /* 24px */
+  --space-3xl: 1.875rem; /* 30px */
+  --space-4xl: 2rem; /* 32px */
+  --space-5xl: 2.313rem; /* 37px */
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--font-line-height-mobile);
+}
+
+h1 {
+  color: var(--color-text-light);
+  font-size: var(--font-size-lg);
+}

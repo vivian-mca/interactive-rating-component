@@ -1,0 +1,15 @@
+.stack > * + * {
+  margin-block-start: var(--space, var(--space-2xl)); /* 24px */
+}
+
+.stack--exception-sm {
+  --space: var(--space-xs); /* 10px */
+}
+
+.stack--exception-md {
+  --space: var(--space-md); /* 16px */
+}
+
+.stack--exception-lg {
+  --space: var(--space-lg); /* 17px */
+}
