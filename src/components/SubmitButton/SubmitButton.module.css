@@ -1,0 +1,12 @@
+.submitButton {
+  display: block;
+  width: var(--button-width-sm);
+  height: var(--button-height-sm);
+  border-radius: 1.406rem;
+  background: var(--color-button-submit);
+  letter-spacing: 0.117rem;
+}
+
+.submitButton:hover {
+  background: var(--color-button-submit-hover);
+}

@@ -1,25 +1,27 @@
 import { RatingButton } from "../../components";
 import PropTypes from "prop-types";
 
-function RatingGroup({ ratings, setSelectedRating }) {
+function RatingGroup({ ratings, selectedRating, setSelectedRating }) {
   return (
-    <>
+    <div className="space-between">
       {/* Loop through the ratings array and render a RatingOption component for each value */}
       {ratings.map((num) => (
         <RatingButton
           key={num}
           value={num}
           totalRatings={ratings.length}
-          onClick={() => setSelectedRating(num)} // On click, it stores the chosen rating
+          selectedRating={selectedRating}
+          onClick={setSelectedRating} // On click, it stores the chosen rating
         />
       ))}
-    </>
+    </div>
   );
 }
 
 // Validate props
 RatingGroup.propTypes = {
   ratings: PropTypes.arrayOf(PropTypes.number).isRequired, // Ensures prop is an array of numbers
+  selectedRating: PropTypes.number, // Ensures prop is a number
   setSelectedRating: PropTypes.func.isRequired, // Ensures prop is a function
 };
 

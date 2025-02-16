@@ -1,0 +1,23 @@
+.container__icon {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--color-button-rating);
+}
+
+.icon {
+  max-width: 0.873rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .icon {
+    max-width: 1.047rem;
+  }
+}

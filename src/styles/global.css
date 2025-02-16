@@ -1,30 +1,32 @@
 :root {
   /* ===== Neutral Colors ===== */
   --color-neutral-100: hsl(0, 0%, 100%);
-  --color-neutral-300: hsl(217, 12%, 63%);
+  --color-neutral-300: hsl(216, 12%, 63%);
   --color-neutral-600: hsl(213, 19%, 18%);
-  --color-neutral-800: hsl(216, 12%, 8%);
+  --color-neutral-800: hsl(218, 11%, 8%);
 
   /* ===== Primary Colors ===== */
   --color-primary-400: hsl(25, 97%, 53%);
 
   /* ===== Semantic Mappings ===== */
   --color-background: var(--color-neutral-800);
-  --color-button-rating-active: var(--color-primary-400);
-  --color-button-rating-hover: var(--color-neutral-100);
-  --color-button-rating: var(--color-neutral-600);
-  --color-button-submit-hover: var(--color-neutral-100);
-  --color-button-submit: var(--color-primary-400);
   --color-card-bg: radial-gradient(
     circle,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 1) 100%
+    hsl(215, 20%, 17%) 0%,
+    hsl(215, 24%, 12%) 100%
   );
   --color-rating-result-bg: var(--color-neutral-600);
   --color-text-accent: var(--color-primary-400);
   --color-text-dark: var(--color-neutral-800);
   --color-text-light: var(--color-neutral-100);
   --color-text-primary: var(--color-neutral-300);
+
+  /* ===== Button States ===== */
+  --color-button-rating-active: var(--color-neutral-100);
+  --color-button-rating-hover: var(--color-primary-400);
+  --color-button-rating: var(--color-neutral-600);
+  --color-button-submit-hover: var(--color-neutral-100);
+  --color-button-submit: var(--color-primary-400);
 
   /* ===== Typography ===== */
   --font-primary: "Overpass", sans-serif;
@@ -38,7 +40,18 @@
   --font-weight-primary: 400;
   --font-weight-bold: 700;
 
+  /* ===== Sizing System ===== */
+  --button-width-sm: 17.438rem; /* 279px */
+  --button-height-sm: 2.813rem; /* 45px */
+  --container-width-xs: 10.5rem; /* 168px */
+  --container-width-sm: 20.438rem; /* 327px */
+  --container-width-md: 25.75rem; /* 412px */
+  --container-height-sm: 2rem; /* 32px */
+  --image-width-sm: 9rem; /* 144px */
+  --image-width-md: ; /* */
+
   /* ===== Spacing System ===== */
+  --space-xxs: 0.313rem; /* 5px */
   --space-xs: 0.625rem; /* 10px */
   --space-sm: 0.938rem; /* 15px */
   --space-md: 1rem; /* 16px */
@@ -47,14 +60,14 @@
   --space-2xl: 1.5rem; /* 24px */
   --space-3xl: 1.875rem; /* 30px */
   --space-4xl: 2rem; /* 32px */
-  --space-5xl: 2.313rem; /* 37px */
+  --space-5xl: 2.125rem; /* 34px */
+  --space-6xl: 2.313rem; /* 37px */
 }
 
 body {
   display: grid;
-  min-height: 100vh;
   place-content: center;
-  background-color: var(--color-background);
+  background: var(--color-neutral-800);
   color: var(--color-text-primary);
   font-family: var(--font-primary);
   font-size: var(--font-size-xs);
@@ -65,4 +78,11 @@ body {
 h1 {
   color: var(--color-text-light);
   font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  font-weight: var(--font-weight-bold);
 }

@@ -1,12 +1,15 @@
 import PropTypes from "prop-types";
+import styles from "./RatingButton.module.css";
 
-function RatingButton({ value, totalRatings, onClick }) {
+function RatingButton({ value, totalRatings, selectedRating, onClick }) {
+  const isSelected = selectedRating === value;
+  
   // Renders a single rating button with the given value
   return (
     <button
-      className="rating-button"
+      className={`${styles.ratingButton} ${isSelected ? styles.selected : ""}`}
       aria-label={`Rate ${value} out of ${totalRatings}`}
-      onClick={onClick} // click event to update rating
+      onClick={() => onClick(value)}
     >
       {value}
     </button>
@@ -15,9 +18,10 @@ function RatingButton({ value, totalRatings, onClick }) {
 
 // Validate props
 RatingButton.propTypes = {
-  // Ensures 'value' and `total Ratings` is a required number
+  // Ensures props is a required number
   value: PropTypes.number.isRequired,
   totalRatings: PropTypes.number.isRequired,
+  selectedRating: PropTypes.number,
   // Ensures 'onClick' is a function
   onClick: PropTypes.func.isRequired,
 };

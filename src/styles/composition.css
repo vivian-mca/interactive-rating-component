@@ -1,3 +1,8 @@
+.center-img {
+  max-width: var(--image-width-sm);
+  margin-inline: auto;
+}
+
 .stack > * + * {
   margin-block-start: var(--space, var(--space-2xl)); /* 24px */
 }
@@ -12,4 +17,23 @@
 
 .stack--exception-lg {
   --space: var(--space-lg); /* 17px */
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+  .stack > * + * {
+    margin-block-start: var(--space, var(--space-4xl)); /* 32px */
+  }
+
+  .stack--exception-md {
+    --space: var(--space-3xl); /* 30px */
+  }
+
+  .stack--exception-lg {
+    --space: 0.438rem; /* 7px */
+  }
 }

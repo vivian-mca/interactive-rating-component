@@ -1,0 +1,17 @@
+.ratingButton {
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 50%;
+  background: var(--color-button-rating);
+  color: var(--color-text-primary);
+}
+
+.ratingButton:hover {
+  background: var(--color-button-rating-hover);
+  color: var(--color-text-dark);
+}
+
+.selected {
+  background: var(--color-button-rating-active);
+  color: var(--color-text-dark);
+}

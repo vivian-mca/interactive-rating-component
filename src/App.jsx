@@ -33,6 +33,7 @@ function App() {
       {!isSubmitted ? ( // If not submitted, show rating options
         <Card
           ratings={ratings}
+          selectedRating={selectedRating}
           setSelectedRating={setSelectedRating}
           handleSubmit={handleSubmit}
         />

@@ -1,8 +1,10 @@
+import styles from "./SubmitButton.module.css";
+
 import PropTypes from "prop-types";
 
 function SubmitButton({ onSubmit }) {
   return (
-    <button type="button" onClick={onSubmit}>
+    <button className={styles.submitButton} type="button" onClick={onSubmit}>
       SUBMIT
     </button>
   );

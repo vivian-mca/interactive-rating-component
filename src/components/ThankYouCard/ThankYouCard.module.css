@@ -1,0 +1,10 @@
+.displayResult {
+  display: inline-block;
+  width: var(--container-width-xs);
+  height: var(--container-height-sm);
+  border-radius: 1.406rem;
+  background: var(--color-rating-result-bg);
+  color: var(--color-text-accent);
+  text-align: center;
+  line-height: var(--container-height-sm); /* vertically aligns text */
+}
