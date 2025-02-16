@@ -1,5 +1,6 @@
 .card {
   max-width: var(--container-width-sm);
+  max-height: var(--container-height-md);
   background: var(--color-card-bg);
   border-radius: 0.938rem;
 }
@@ -11,10 +12,6 @@
   height: 2.625rem;
   border-radius: 50%;
   background-color: var(--color-button-rating);
-}
-
-.margin-inline {
-  margin-inline: var(--space-2xl); /* 24px */
 }
 
 .padding-inline {
@@ -44,6 +41,7 @@
 @media screen and (min-width: 1024px) {
   .card {
     max-width: var(--container-width-md);
+    max-height: var(--container-height-lg)
   }
 
   .padding-inline {

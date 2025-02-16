@@ -1,9 +1,10 @@
 import { RatingButton } from "../../components";
 import PropTypes from "prop-types";
 
+import styles from "./RatingGroup.module.css";
 function RatingGroup({ ratings, selectedRating, setSelectedRating }) {
   return (
-    <div className="space-between">
+    <div className={`${styles.ratingGroup} space-between`}>
       {/* Loop through the ratings array and render a RatingOption component for each value */}
       {ratings.map((num) => (
         <RatingButton

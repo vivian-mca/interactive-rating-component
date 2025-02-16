@@ -8,3 +8,15 @@
   text-align: center;
   line-height: var(--container-height-sm); /* vertically aligns text */
 }
+
+@media screen and (min-width: 1024px) {
+  .thankYouMessage {
+    margin-block-start: var(--space-sm);
+  }
+
+  .displayResult {
+    width: var(--result-width);
+    height: var(--result-height);
+    line-height: var(--result-height);
+  }
+}

@@ -20,4 +20,13 @@
   .icon {
     max-width: 1.047rem;
   }
+
+  .header {
+    margin-block-start: var(--space-3xl); /* 30px */
+    font-size: var(--font-size-xl);
+  }
+
+  .body {
+    margin-block-start: 0.438rem; /* 7px */
+  }
 }

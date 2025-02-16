@@ -1,0 +1,5 @@
+@media screen and (min-width: 1024px) {
+  .ratingGroup {
+    margin-block-start: var(--space-2xl); /* 24px */
+  }
+}

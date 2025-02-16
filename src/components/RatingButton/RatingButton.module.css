@@ -15,3 +15,11 @@
   background: var(--color-button-rating-active);
   color: var(--color-text-dark);
 }
+
+@media screen and (min-width: 1024px) {
+  .ratingButton {
+    width: 3.188rem;
+    height: 3.188rem;
+    font-size: var(--font-size-md);
+  }
+}

@@ -1,5 +1,7 @@
 .submitButton {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: var(--button-width-sm);
   height: var(--button-height-sm);
   border-radius: 1.406rem;
@@ -9,4 +11,12 @@
 
 .submitButton:hover {
   background: var(--color-button-submit-hover);
+}
+
+@media screen and (min-width: 1024px) {
+  .submitButton {
+    width: var(--button-width-md);
+    margin-block-start: var(--space-4xl);
+    font-size: var(--font-size-sm);
+  }
 }

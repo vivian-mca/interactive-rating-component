@@ -25,6 +25,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .center-img {
+    max-width: var(--image-width-md);
+  }
+  
   .stack > * + * {
     margin-block-start: var(--space, var(--space-4xl)); /* 32px */
   }
