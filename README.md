@@ -35,11 +35,11 @@
     - [_Managing Back Navigation in React_](#managing-back-navigation-in-react)
     - [_Using a Custom Hook (`useMediaQuery`)_](#using-a-custom-hook-usemediaquery)
     - [_Structuring a Component-Based UI_](#structuring-a-component-based-ui)
-  - [Continued development](#continued-development)
-  - [Getting started](#getting-started)
-    - [Installation \& Setup](#installation--setup)
-    - [Deployment](#deployment)
-  - [Useful resources](#useful-resources)
+- [Continued development](#continued-development)
+- [Getting started](#getting-started)
+  - [Installation \& Setup](#installation--setup)
+  - [Deployment](#deployment)
+- [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -151,7 +151,7 @@ I focused on keeping my React components modular and reusable, breaking them dow
 
 This structure helped separate concerns, making it easier to manage state and styles independently.
 
-### Continued development
+## Continued development
 
 Moving forward, I want to:
 
@@ -161,9 +161,9 @@ Moving forward, I want to:
 
 I struggled with `props` management during this project, so I want to hone my skills more in creating React apps and deep dive into other useful hooks that are common in the industry.
 
-### Getting started
+## Getting started
 
-#### Installation & Setup
+### Installation & Setup
 
 To run this project locally, follow these steps:
 
@@ -202,7 +202,7 @@ npm run preview
 
 This will serve the built project locally for testing.
 
-#### Deployment
+### Deployment
 
 This project is deployed using **Netlify**. If you want to deploy your own version:
 
@@ -222,7 +222,7 @@ dist
 
 5. Deploy and share your live project!
 
-### Useful resources
+## Useful resources
 
 - [React Docs](https://react.dev/reference/react) - They really have great documentation on everything React.
 - [CSS Logical Properties and Values](https://css-tricks.com/css-logical-properties-and-values/) - This is a good resource for learning about CSS Logical Properties and Values.
