@@ -93,7 +93,7 @@ Users should be able to:
 
 This project was a full deep dive into structuring a React component-based application while implementing best practices for state management, hooks, and styling methodologies. Here are my few key takeaways:
 
-#### _Managing Back Navigation in React_
+#### 1. Managing Back Navigation in React
 
 One of the first things I noticed was that clicking the back button didn’t return to the rating card. My instinct was to navigate back, so I implemented a solution using the popstate event to handle browser history changes.
 
@@ -112,7 +112,7 @@ useEffect(() => {
 
 This ensures that when users click the back button, the app resets correctly instead of getting stuck in a submitted state.
 
-#### _Using a Custom Hook (`useMediaQuery`)_
+#### 2. Using a Custom Hook (`useMediaQuery`)
 
 For the desktop version, I needed to adjust the card size dynamically. I implemented a custom React Hook (`useMediaQuery`) to check screen width and conditionally apply different class names for styling.
 
@@ -139,7 +139,7 @@ function useMediaQuery(query) {
 
 This allowed me to swap out class names dynamically, especially since I use CSS utility classes, ensuring a smooth transition between mobile and desktop layouts.
 
-#### _Structuring a Component-Based UI_
+#### 3. Structuring a Component-Based UI
 
 I focused on keeping my React components modular and reusable, breaking them down into:
 
